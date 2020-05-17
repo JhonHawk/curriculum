@@ -1,0 +1,59 @@
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+        <div [fxLayout]="'row'" class="w100" [fxLayoutAlign]="'start none'">
+            <div [fxFlex]="'90'" [fxLayoutAlign]="'start center'">
+                <button mat-button color="accent" (click)="darkTheme = !darkTheme">
+                    <mat-icon *ngIf="darkTheme; else elseIconMenu">
+                        menu
+                    </mat-icon>
+                    <ng-template #elseIconMenu>
+                        <mat-icon appearance="outline">
+                            menu_open
+                        </mat-icon>
+                    </ng-template>
+                </button>
+            </div>
+            <div [fxFlex]="'10'" [fxLayoutAlign]="'end center'">
+                <button mat-button [matMenuTriggerFor]="langsMenu" aria-label="Example icon-button with a menu">
+                    <!-- {{'init' | translate}} -->
+                    <img class="lang-img m-0" [src]="iconsSrc + selectedLang.imgSrc" [alt]="selectedLang.imgSrc">
+                </button>
+                <mat-menu #langsMenu="matMenu">
+                    <button
+                        mat-menu-item
+                        *ngFor="let item of selectionOptions(); let i=index"
+                        (click)="handleSelect(item)"
+                    >
+                        <img
+                            class="lang-img"
+                            [src]="iconsSrc + item.imgSrc"
+                            [alt]="item.imgSrc"
+                        >
+                        {{ item.title }}
+                    </button>
+                </mat-menu>
+
+                <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+                    <mat-icon>more_vert</mat-icon>
+                </button>
+                <mat-menu #menu="matMenu">
+                    <button mat-menu-item (click)="darkTheme = !darkTheme">
+                        <mat-icon *ngIf="darkTheme; else elseIcon">
+                            wb_sunny
+                        </mat-icon>
+                        <ng-template #elseIcon>
+                            <mat-icon appearance="outline">
+                                wb_sunny
+                            </mat-icon>
+                        </ng-template>
+                        <span>{{ 'toolbar.dark_mode' | translate }}</span>
+                    </button>
+                    <button mat-menu-item>
+                        <mat-icon>save_alt</mat-icon>
+                        <span>{{ 'toolbar.download_pdf' | translate }}</span>
+                    </button>
+                </mat-menu>
+            </div>
+        </div>
+    </mat-toolbar-row>
+</mat-toolbar>

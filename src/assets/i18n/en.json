@@ -1,0 +1,7 @@
+{
+	"init": "Example",
+	"toolbar": {
+		"dark_mode": "Dark mode",
+		"download_pdf": "Download PDF"
+	}
+}
