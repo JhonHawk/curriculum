@@ -2,7 +2,7 @@
     <mat-toolbar-row>
         <div [fxLayout]="'row'" class="w100" [fxLayoutAlign]="'start none'">
             <div [fxFlex]="'90'" [fxLayoutAlign]="'start center'">
-                <button mat-button color="accent" (click)="darkTheme = !darkTheme">
+                <!-- <button mat-button color="accent" (click)="darkTheme = !darkTheme">
                     <mat-icon *ngIf="darkTheme; else elseIconMenu">
                         menu
                     </mat-icon>
@@ -11,7 +11,7 @@
                             menu_open
                         </mat-icon>
                     </ng-template>
-                </button>
+                </button> -->
             </div>
             <div [fxFlex]="'10'" [fxLayoutAlign]="'end center'">
                 <button mat-button [matMenuTriggerFor]="langsMenu" aria-label="Example icon-button with a menu">
@@ -37,18 +37,21 @@
                     <mat-icon>more_vert</mat-icon>
                 </button>
                 <mat-menu #menu="matMenu">
-                    <button mat-menu-item (click)="darkTheme = !darkTheme">
-                        <mat-icon *ngIf="darkTheme; else elseIcon">
-                            wb_sunny
-                        </mat-icon>
-                        <ng-template #elseIcon>
-                            <mat-icon appearance="outline">
+                    <button mat-menu-item (click)="darkThemeToggle()">
+                        <div *ngIf="darkTheme; else elseIcon">
+                            <mat-icon>
                                 wb_sunny
                             </mat-icon>
+                            <span>{{ 'toolbar.light_mode' | translate }}</span>
+                        </div>
+                        <ng-template #elseIcon>
+                            <mat-icon>
+                                wb_sunny
+                            </mat-icon>
+                            <span>{{ 'toolbar.dark_mode' | translate }}</span>
                         </ng-template>
-                        <span>{{ 'toolbar.dark_mode' | translate }}</span>
                     </button>
-                    <button mat-menu-item>
+                    <button mat-menu-item (click)="downloadPdf()">
                         <mat-icon>save_alt</mat-icon>
                         <span>{{ 'toolbar.download_pdf' | translate }}</span>
                     </button>

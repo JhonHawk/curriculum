@@ -1,7 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { CookieService } from 'ngx-cookie-service';
+import { ThemingService } from '../../services/theming/theming.service';
 
+enum DarkTheme {
+  true = 'dark-theme',
+  false = 'light-theme'
+}
 @Component({
   selector: 'app-toolbar',
   templateUrl: './toolbar.component.html',
@@ -26,17 +31,25 @@ export class ToolbarComponent implements OnInit {
     title: 'Portugues',
     imgSrc: 'BR.ico'
   }];
+  themes: string[];
+
   constructor(
     private translate: TranslateService,
-    private cookieService: CookieService
+    private cookieService: CookieService,
+    private theming: ThemingService
   ) { }
 
   ngOnInit(): void {
     this.loadLang();
+    this.themes = this.theming.themes;
   }
 
   downloadPdf(){
-    console.log('se descargo el pdf')
+    console.log('descargar pdf')
+    let link = document.createElement("a");
+    link.download = "cv_juan_manuel_martinez.pdf";
+    link.href = "/assets/file/cv.pdf";
+    link.click()
   }
 
   handleSelect(lang: any) {
@@ -51,9 +64,16 @@ export class ToolbarComponent implements OnInit {
 
   loadLang() {
     const currentLang = this.translate.currentLang;
-    console.log('current', currentLang)
     this.selectedLang = this.languages.find(lang => lang.name === currentLang);
   }
 
+  darkThemeToggle(){
+    this.darkTheme = !this.darkTheme;
+    this.changeTheme();
+  }
+
+  changeTheme() {
+    (this.darkTheme) ? this.theming.theme.next(DarkTheme.true) : this.theming.theme.next(DarkTheme.false)
+  }
 
 }

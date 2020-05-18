@@ -15,7 +15,7 @@ import {TranslateModule, TranslateLoader} from '@ngx-translate/core';
 import { CustomTranslateService } from './core/translate/custom-translate.service';
 import { registerLocaleData } from '@angular/common';
 import { CookieService } from 'ngx-cookie-service';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [

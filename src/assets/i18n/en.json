@@ -2,6 +2,7 @@
 	"init": "Example",
 	"toolbar": {
 		"dark_mode": "Dark mode",
-		"download_pdf": "Download PDF"
+		"download_pdf": "Download PDF",
+		"light_mode": "Clear mode"
 	}
 }
