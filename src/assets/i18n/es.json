@@ -4,5 +4,31 @@
 		"dark_mode": "Modo oscuro",
 		"download_pdf": "Descargar PDF",
 		"light_mode": "Modo claro"
+	},
+	"general": {
+		"name": "Juan Manuel Martínez Ortiz",
+		"position": "Desarrollador Front-End"
+	},
+	"academic": {
+		"high_school":{
+			"title": "Media Superior 2010-2013",
+			"name": "CECYT #2 Miguel Bernard-IPN // Diseño Gráfico Digital"
+		},
+		"university":{
+			"title": "Universidad 2015 - Trunca",
+			"name": "Escuela Superior de Economía IPN // Economía"
+		}
+	},
+	"work_experience": {
+		"first": {
+			"title": "FLUOTEC SAPI de CV (Corporativo Teletec) 2016-2019",
+			"position": "Analista de Tiempos y Movimientos // Programador CNC",
+			"activities": "-Análisis y entrega de informes sobre producción a nivel directivo  Organización de personal sindicalizado  Uso de SAP B1-HANA, para controlar consumo de materiales Desarrollo de reportes en base a SAP B1 HANA a nivel gerencial"
+		},
+		"last": {
+			"title": "E-bitware 2019 - Actual",
+			"position": "Analista de Tiempos y Movimientos // Programador CNC",
+			"activities": "Desarrollo de interfaces responsivas -Análisis de impacto en cada sprint de desarrollo -Análisis funcional sobre el desarrollo continuo. -Desarrollo de nuevos mapas de navegación."
+		}
 	}
 }
