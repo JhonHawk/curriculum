@@ -16,11 +16,14 @@ import { CustomTranslateService } from './core/translate/custom-translate.servic
 import { registerLocaleData } from '@angular/common';
 import { CookieService } from 'ngx-cookie-service';
 import { HttpClientModule } from '@angular/common/http';
+import { CvPageComponent } from './page/cv-page/cv-page.component';
+import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
   declarations: [
     AppComponent,
     ToolbarComponent,
+    CvPageComponent,
   ],
   imports: [
     BrowserModule,
@@ -36,7 +39,8 @@ import { HttpClientModule } from '@angular/common/http';
         provide: TranslateLoader,
         useClass: CustomTranslateService
       }
-    })
+    }),
+    MatCardModule
   ],
   providers: [CookieService],
   bootstrap: [AppComponent]

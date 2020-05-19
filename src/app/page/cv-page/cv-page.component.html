@@ -1,0 +1,154 @@
+<div class="container-bg" [ngClass]="{ bg: theming }">
+    <div [fxLayout]="'row'" class="h100" [fxLayoutGap]="'20px'">
+        <div [fxFlex]="'30'">
+            <mat-card class="example-card">
+                <mat-card-header>
+                    <div mat-card-avatar class="example-header-image"></div>
+                    <mat-card-title>{{ "general.name" | translate }}</mat-card-title>
+                    <mat-card-subtitle>{{
+            "general.position" | translate
+          }}</mat-card-subtitle>
+                </mat-card-header>
+                <img mat-card-image src="assets/img/avatar.jpg" alt="Photo of JhonHawk" />
+                <mat-card-content>
+                    <p>
+                        {{ "general.description" | translate }}
+                    </p>
+
+                    <div [fxLayout]="'column'">
+                        <h2>
+                            <strong>{{ "contact.title" | translate }}</strong>
+                        </h2>
+                        <div>
+                            <h3>
+                                <strong>{{ "contact.born_date.title" | translate }}</strong>
+                            </h3>
+                            <p>{{ "contact.born_date.body" | translate }}</p>
+                        </div>
+                        <div>
+                            <h3>
+                                <strong>{{ "contact.direction.title" | translate }}</strong>
+                            </h3>
+                            <p>{{ "contact.direction.body" | translate }}</p>
+                        </div>
+                        <div>
+                            <h3>
+                                <strong>{{ "contact.email.title" | translate }}</strong>
+                            </h3>
+                            <p>{{ "contact.email.body" | translate }}</p>
+                        </div>
+                        <div>
+                            <h3>
+                                <strong>{{ "contact.mobile.title" | translate }}</strong>
+                            </h3>
+                            <p>{{ "contact.mobile.body" | translate }}</p>
+                        </div>
+                    </div>
+                </mat-card-content>
+            </mat-card>
+        </div>
+
+        <div [fxFlex]="'70'">
+            <mat-card class="example-card">
+                <mat-card-content>
+                    <div lass="mt-1">
+                        <h2 class="blue">
+                            <strong>
+                                {{ "academic.title" | translate }}
+                            </strong>
+                        </h2>
+                        <hr />
+                        <div>
+                            <h3>
+                                <strong>{{ "academic.high_school.title" | translate }}</strong>
+                            </h3>
+                            <p>{{ "academic.high_school.name" | translate }}</p>
+                        </div>
+                        <div>
+                            <h3>
+                                <strong>{{ "academic.university.title" | translate }}</strong>
+                            </h3>
+                            <p>{{ "academic.university.name" | translate }}</p>
+                        </div>
+                    </div>
+
+                    <div class="mt-1">
+                        <h2 class="blue">
+                            <strong>
+                                {{ "work_experience.title" | translate }}
+                            </strong>
+                        </h2>
+                        <hr />
+                        <div>
+                            <h3>
+                                <strong>{{ "work_experience.first.title" | translate }}</strong>
+                            </h3>
+                            <h4>{{ "work_experience.first.position" | translate }}</h4>
+                            <p>{{ "work_experience.first.activities" | translate }}</p>
+                        </div>
+
+                        <div>
+                            <h3>
+                                <strong>{{ "work_experience.last.title" | translate }}</strong>
+                            </h3>
+                            <h4>{{ "work_experience.last.position" | translate }}</h4>
+                            <p>{{ "work_experience.last.activities" | translate }}</p>
+                        </div>
+                    </div>
+
+                    <div class="mt-1">
+                        <h2 class="blue">
+                            <strong>
+                                {{ "professional.title" | translate }}
+                            </strong>
+                        </h2>
+                        <hr />
+                        <div>
+                            <h3>
+                                <strong>{{ "professional.teletec.Place" | translate }}</strong>
+                            </h3>
+                            <h4>{{ "professional.teletec.title" | translate }}</h4>
+                            <ul>
+                                {{
+                  "professional.teletec.sec1" | translate
+                }}
+                            </ul>
+                            <ul>
+                                {{
+                  "professional.teletec.sec2" | translate
+                }}
+                            </ul>
+                            <ul>
+                                {{
+                  "professional.teletec.sec3" | translate
+                }}
+                            </ul>
+                            <ul>
+                                {{
+                  "professional.teletec.sec4" | translate
+                }}
+                            </ul>
+                        </div>
+
+                        <div>
+                            <h4>{{ "professional.programming.title" | translate }}</h4>
+                            <ul>
+                                {{
+                  "professional.programming.body" | translate
+                }}
+                            </ul>
+                        </div>
+                    </div>
+                </mat-card-content>
+                <mat-card-actions>
+                    <a mat-button target="_blank" rel="noopener noreferrer"
+                        href="https://twitter.com/j_m_martinez_o">Twitter</a>
+                    <a mat-button target="_blank" rel="noopener noreferrer"
+                        href="https://platzi.com/@JhonHawk/">Platzi</a>
+                    <a mat-button target="_blank" rel="noopener noreferrer"
+                        href="hhttps://github.com/JhonHawk">Github</a>
+                </mat-card-actions>
+            </mat-card>
+        </div>
+    </div>
+</div>

@@ -1,34 +1,87 @@
 {
+	"academic": {
+		"title": "Formación Académica",
+		"high_school": {
+			"name": "CECYT #2 Miguel Bernard-IPN // Diseño Gráfico Digital",
+			"title": "Media Superior 2010-2013"
+		},
+		"university": {
+			"name": "Escuela Superior de Economía IPN // Economía",
+			"title": "Universidad 2015 - Trunca"
+		}
+	},
+	"contact": {
+		"title": "Contacto",
+		"born_date": {
+			"body": "23 de Marzo de 1995",
+			"title": "Fecha de nacimiento"
+		},
+		"direction": {
+			"body": "Laguna Guzmán 125 Anáhuac II Secc, 11320 Ciudad de México, D.F.",
+			"title": "Dirección"
+		},
+		"email": {
+			"body": "bloodamn@gmail.com",
+			"title": "Correo electronico"
+		},
+		"mobile": {
+			"body": "044 55 7696 8996",
+			"title": "Télefono celular"
+		}
+	},
+	"general": {
+		"description": "Desarrollador Front - End, con aptitudes para diseño gráfico dígital, motion graphics, desarrollo de interfaz de usuario, especialista en Angular +2",
+		"name": "Juan Manuel Martínez Ortiz",
+		"position": "Desarrollador Front-End",
+		"information": "Información",
+		"information_label": "Lee sobre mi formación profesional"
+	},
 	"init": "ejemplo",
+	"professional": {
+		"title": "Logros profesionales",
+		"programming": {
+			"body": "Desarrollo de FrontEnd para aplicación que replica peticiones de gastos sobre las Bases de Datos en SAP internas, permitiendo que agilizar estas tareas a nivel corporativo.",
+			"title": "Programador"
+		},
+		"teletec": {
+			"place": "Teletec de México // Fluotec SAPI de CV 2017 - 2019",
+			"sec1": "Apoyo en el desarrollo e implementación de una aplicación que registra los movimientos actividades de los trabajadores en una base de datos interna SQL, información que se usa para generar reportes a nivel gerencial sobre capacidad de producción.",
+			"sec2": "Implementación y monitoreo de procesos de manufactura y administrativos (SAP B1-HANA) sobre uso de materiales.",
+			"sec3": "Migración masiva de reportes tradicionales (Microsoft Office) a la tecnología en la nube (Google Drive Docs), incrementando su realización, cooperación en tiempo real y permeando información entre los interesados.",
+			"sec4": "Desarrollo de <<scripts>> para automatizar tareas en Google Drive Docs",
+			"title": "Análista de Tiempos y Movimientos"
+		}
+	},
+	"skills": {
+		"skill_1": "HTML5 - CSS3",
+		"skill_10": "Premiere CC",
+		"skill_11": "After Effects",
+		"skill_12": "SAP B1 / HANA",
+		"skill_2": "JavaScript",
+		"skill_3": "Angular +2",
+		"skill_4": "Git",
+		"skill_5": "MySQL",
+		"skill_6": "Diseño UI",
+		"skill_7": "Adobe XD",
+		"skill_8": "Photoshop CC",
+		"skill_9": "Illustrator CC"
+	},
 	"toolbar": {
 		"dark_mode": "Modo oscuro",
 		"download_pdf": "Descargar PDF",
 		"light_mode": "Modo claro"
 	},
-	"general": {
-		"name": "Juan Manuel Martínez Ortiz",
-		"position": "Desarrollador Front-End"
-	},
-	"academic": {
-		"high_school":{
-			"title": "Media Superior 2010-2013",
-			"name": "CECYT #2 Miguel Bernard-IPN // Diseño Gráfico Digital"
-		},
-		"university":{
-			"title": "Universidad 2015 - Trunca",
-			"name": "Escuela Superior de Economía IPN // Economía"
-		}
-	},
 	"work_experience": {
+		"title": "Experiencia laboral",
 		"first": {
-			"title": "FLUOTEC SAPI de CV (Corporativo Teletec) 2016-2019",
+			"activities": "-Análisis y entrega de informes sobre producción a nivel directivo -Organización de personal sindicalizado  -Uso de SAP B1-HANA, para controlar consumo de materiales Desarrollo de reportes en base a SAP B1 HANA a nivel gerencial",
 			"position": "Analista de Tiempos y Movimientos // Programador CNC",
-			"activities": "-Análisis y entrega de informes sobre producción a nivel directivo  Organización de personal sindicalizado  Uso de SAP B1-HANA, para controlar consumo de materiales Desarrollo de reportes en base a SAP B1 HANA a nivel gerencial"
+			"title": "FLUOTEC SAPI de CV (Corporativo Teletec) 2016-2019"
 		},
 		"last": {
-			"title": "E-bitware 2019 - Actual",
+			"activities": "Desarrollo de interfaces responsivas -Análisis de impacto en cada sprint de desarrollo -Análisis funcional sobre el desarrollo continuo. -Desarrollo de nuevos mapas de navegación.",
 			"position": "Analista de Tiempos y Movimientos // Programador CNC",
-			"activities": "Desarrollo de interfaces responsivas -Análisis de impacto en cada sprint de desarrollo -Análisis funcional sobre el desarrollo continuo. -Desarrollo de nuevos mapas de navegación."
+			"title": "E-bitware 2019 - Actual"
 		}
 	}
 }

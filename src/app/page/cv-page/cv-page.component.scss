@@ -1,0 +1,27 @@
+.h100 {
+    height: calc(100% - 64px);
+    padding: 10px;
+}
+
+.container-bg {
+    // height: 100%;
+}
+.bg {
+    background-color: black;
+}
+h3 {
+    margin-bottom: 0;
+    color: gray;
+}
+
+hr, .blue {
+    color: #3f51b5;
+}
+
+.mt-1 {
+    margin-top: 2rem;
+}
+
+ul, li {
+    list-style: circle;
+}

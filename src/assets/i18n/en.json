@@ -1,8 +1,81 @@
 {
+	"academic": {
+		"high_school": {
+			"name": "CECYT # 2 Miguel Bernard-IPN // Digital Graphic Design",
+			"title": "Higher Average 2010-2013"
+		},
+		"university": {
+			"name": "Higher School of Economics IPN // Economics",
+			"title": "University 2015 - Trunca"
+		}
+	},
+	"contact": {
+		"born_date": {
+			"body": "March 23, 1995",
+			"title": "Birthdate"
+		},
+		"direction": {
+			"body": "Guzmán Lagoon 125 Anáhuac II Secc, 11320 Mexico City, D.F.",
+			"title": "Address"
+		},
+		"email": {
+			"body": "bloodamn@gmail.com",
+			"title": "Email"
+		},
+		"mobile": {
+			"body": "044 55 7696 8996",
+			"title": "Cell phone"
+		}
+	},
+	"general": {
+		"description": "Front - End developer, with skills in digital graphic design, motion graphics, user interface development, Angular +2 specialist",
+		"name": "Juan Manuel Martínez Ortiz",
+		"position": "Front-end developer"
+	},
 	"init": "Example",
+	"professional": {
+		"programming": {
+			"body": "Development of FrontEnd for application that replicates requests for expenses on the databases in internal SAP, allowing to speed up these tasks at the corporate level.",
+			"title": "Programmer"
+		},
+		"teletec": {
+			"place": "Teletec de México // Fluotec SAPI de CV 2017 - 2019",
+			"sec1": "Support in the development and implementation of an application that records the movements and activities of workers in an internal SQL database, information that is used to generate reports at the management level on production capacity.",
+			"sec2": "Implementation and monitoring of manufacturing and administrative processes (SAP B1-HANA) on the use of materials.",
+			"sec3": "Massive migration of traditional reports (Microsoft Office) to cloud technology (Google Drive Docs), increasing their realization, real-time cooperation and permeating information among stakeholders.",
+			"sec4": "Development of <<scripts>> to automate tasks in Google Drive Docs",
+			"title": "Time and Movement Analyst"
+		}
+	},
+	"skills": {
+		"skill_1": "HTML5 - CSS3",
+		"skill_10": "Premiere CC",
+		"skill_11": "After Effects",
+		"skill_12": "SAP B1 / HANA",
+		"skill_2": "JavaScript",
+		"skill_3": "Angular +2",
+		"skill_4": "Git",
+		"skill_5": "MySQL",
+		"skill_6": "UI design",
+		"skill_7": "Adobe xd",
+		"skill_8": "Photoshop CC",
+		"skill_9": "Illustrator CC"
+	},
 	"toolbar": {
 		"dark_mode": "Dark mode",
 		"download_pdf": "Download PDF",
 		"light_mode": "Clear mode"
+	},
+	"work_experience": {
+		"first": {
+			"activities": "-Analysis and delivery of reports on production at managerial level Organization of unionized personnel Use of SAP B1-HANA, to control consumption of materials Development of reports based on SAP B1 HANA at managerial level",
+			"position": "Time and Movement Analyst // CNC Programmer",
+			"title": "FLUOTEC SAPI de CV (Corporativo Teletec) 2016-2019"
+		},
+		"last": {
+			"activities": "Development of responsive interfaces -Impact analysis in each development sprint -Functional analysis on continuous development. -Development of new navigation maps.",
+			"position": "Time and Movement Analyst // CNC Programmer",
+			"title": "E-bitware 2019 - Current"
+		}
 	}
 }
