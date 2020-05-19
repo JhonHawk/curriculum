@@ -15,7 +15,7 @@ enum DarkTheme {
 export class ToolbarComponent implements OnInit {
 
   darkTheme: boolean = false;
-  iconsSrc = '/assets/language/';
+  iconsSrc = 'assets/language/';
   defaultLang = 'es';
   selectedLang;
   languages = [{
